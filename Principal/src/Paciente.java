@@ -45,7 +45,7 @@ public class Paciente {
             diag = "Baixo peso";
         }
 
-        if (imc >- 18.50 && imc <= 24.99){
+        if (imc >= 18.50 && imc <= 24.99){
             diag = "Peso normal";
         }
 
