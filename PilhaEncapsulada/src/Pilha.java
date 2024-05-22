@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Pilha {
 
     private Object[] elementos;
@@ -25,8 +27,9 @@ public class Pilha {
         return topo;
     }
 
-    public Object[] getElementos() {
-        return elementos;
+    public Object [] getElementos() {
+        Object [] paraRetorno = Arrays.copyOf(elementos,tamanho());
+        return paraRetorno;
     }
 
     public void setElementos(Object[] elementos) {
